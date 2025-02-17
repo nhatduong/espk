@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "espeak-ng",
   products: [
-    .library(name: "libespeak_ng", targets: ["libespeak-ng"]),
+    .library(name: "libespeak-ng", targets: ["libespeak-ng"]),
     .library(name: "espeak-ng-data", targets: ["data"]),
   ],
   targets: [
@@ -30,7 +30,7 @@ let package = Package(
       ]
     ),
     .target(
-      name: "libespeak_ng",
+      name: "libespeak-ng",
       dependencies: [ "libsonic", "libucd" ],
       exclude: [
         "_repo",
